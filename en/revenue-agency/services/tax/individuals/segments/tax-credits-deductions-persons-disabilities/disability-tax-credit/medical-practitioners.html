@@ -59,38 +59,15 @@ notedlinks:
 <nav role="navigation">
     <h2>On this page</h2>
     <ul>
-        <li><a href="#toc0">Get ready to apply</a></li>
-        <li><a href="#toc1">Fill out the application</a></li>
-        <li><a href="#toc2">Submit the application</a></li>
-        <li><a href="#toc3">Check processing times</a></li>
+        <li><a href="#toc0">Medical practitioners who can certify impairments</a></li>
+        <li><a href="#toc1">Completing the DTC application</a></li>
+		<li><a href="#toc2">If we ask for more information</a></li>
+        <li><a href="#toc3">Get support from the CRA</a></li>
     </ul>
 </nav>
-<script type="text/javascript">
-    //window.onload is needed otherwise it doesnot scan whole document but upto the component area only new version
-    window.onload = function() {
-        var hTags = ['H2','H2','H2','H2'];
-        var hText = ['Get ready to apply','Fill out the application','Submit the application','Check processing times'];
-        if(typeof hTags != 'undefined' && hTags != null){
-            for(var i = 0; i < hTags.length; i++){
-                var tags = document.querySelectorAll(hTags[i].toLowerCase());
-    if(typeof tags != 'undefined' && tags != null){
-                    for(var j = 0; j < tags.length; j++){
-                       // mws-1900 - the heading from texts contains contains text without backslash before appostraphy, where as tags returned by query selector does not contain them
-                        // hence removing backslash for creating equal comparison in order to add id reference
-                        if(tags[j].textContent.trim() === hText[i].replace(/\\/g, '')) {
-    			if(!tags[j].id) {
-    				tags[j].setAttribute('id', 'toc'+i);
-    				break;
-    			}
-                        }
-                    }
-                }
-            }
-        }
-    };
-</script>
+
 <div class="row">
-        <h2>Medical practitioners who can certify impairments</h2>
+        <h2 id="toc0">Medical practitioners who can certify impairments</h2>
         <p>Applying for the DTC involves the person who has the impairment and a medical practitioner who can certify the effects of the impairment.</p>
 	<p>There are many types of medical practitioners who can complete and certify the effects of the impairment.</p>
         <table class="table mrgn-tp-md">
@@ -133,7 +110,7 @@ notedlinks:
             </tbody>
         </table>
 
-        <h2>Completing the DTC application</h2>
+        <h2 id="toc1">Completing the DTC application</h2>
         <p>Applicants complete Part A of the DTC application, and medical practitioners complete Part B. Applicants may apply for the DTC using the digital form or the printed paper form.</p>
 	<p>Part B must only be completed by the medical practitioner. Applicants <strong>cannot</strong> complete Part B themselves.</p>
 	     <h3>How to assess patients</h3>
@@ -237,7 +214,7 @@ notedlinks:
         </div>
 </div>
 <div class="row">
-        <h2>Submit the application</h2>
+        <h3>Submit the application</h3>
         <p>There are 2 ways to submit a completed Form T2201,<em> Disability Tax Credit Certificate</em>, and any related documents to the CRA.</p>
         <dl class="dl-horizontal brdr-0 mrgn-bttm-sm">
             <dt>Online</dt>
@@ -277,7 +254,10 @@ notedlinks:
                 </details>
             </dd>
         </dl>
-
+	<h2 id="toc2">If we ask for more information</h2>
+	<p><mark>[Text specific to medical practitioners to follow]</mark></p>
+<h2 id="toc3">Get support from the CRA</h2>
+	<p>If you are a medical practitioner and need to contact the CRA about a DTC matter, <mark>[text specific to medical practitioners to follow]</mark></p>
 
 
         <nav aria-label="Section navigation" class="mrgn-bttm-lg mrgn-tp-lg">
@@ -291,35 +271,3 @@ notedlinks:
     </div>
 </div>
 
-<script>
-
-    //window.onload is needed otherwise it doesnot scan whole document but upto the component area only new version
-    window.onload = function() {
-
-        var hTags = ['H2','H2','H2','H2'];
-        var hText = ['Get ready to apply','Fill out the application','Submit the application','Check processing times'];
-
-        if(typeof hTags != 'undefined' && hTags != null){
-            for(var i = 0; i < hTags.length; i++){
-                var tags = document.querySelectorAll(hTags[i].toLowerCase());
-                
-				if(typeof tags != 'undefined' && tags != null){
-                    for(var j = 0; j < tags.length; j++){
-                       // mws-1900 - the heading from texts contains contains text without backslash before appostraphy, where as tags returned by query selector does not contain them
-                        // hence removing backslash for creating equal comparison in order to add id reference
-                        if(tags[j].textContent.trim() === hText[i].replace(/\\/g, '')) {
-							if(!tags[j].id) {
-								tags[j].setAttribute('id', 'toc'+i);
-								break;
-							}
-                        }
-                    }
-                }
-            }
-        }
-
-    };
-
-
-</script>
-<script>_satellite.pageBottom();</script>
